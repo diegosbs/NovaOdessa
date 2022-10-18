@@ -32,7 +32,7 @@ namespace Nova_Odessa
             Globals.spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            cursor = new Basic2d("2d\\Misc\\CursorArrow.xnb", new Vector2(0,0), new Vector2(28,28));
+            cursor = new Basic2d("2d\\Misc\\CursorArrow", new Vector2(0,0), new Vector2(28,28));
 
             Globals.keyboard = new McKeyboard();
             Globals.mouse = new McMouseControl();
