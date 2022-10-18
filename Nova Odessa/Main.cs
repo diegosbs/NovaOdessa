@@ -22,6 +22,14 @@ namespace Nova_Odessa
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            Globals.screenWidth = 800;
+            Globals.screenHeight = 500;
+
+            _graphics.PreferredBackBufferHeight = Globals.screenHeight;
+            _graphics.PreferredBackBufferWidth = Globals.screenWidth;
+
+            _graphics.ApplyChanges();
+
 
             base.Initialize();
         }
@@ -50,6 +58,7 @@ namespace Nova_Odessa
                 Exit();
 
             // TODO: Add your update logic here
+            Globals.gameTime  =  gameTime;
             Globals.keyboard.Update();
             Globals.mouse.Update();
 

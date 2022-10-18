@@ -20,13 +20,11 @@ namespace NovaOdessa
     public class Globals
     {
         public static int screenHeight, screenWidth;
-
         public static ContentManager content;
         public static SpriteBatch spriteBatch;
-
-
         public static McKeyboard keyboard;
         public static McMouseControl mouse;
+        public static GameTime gameTime;
 
 
         public static float GetDistance(Vector2 pos, Vector2 target)

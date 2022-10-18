@@ -17,10 +17,8 @@ using Microsoft.Xna.Framework.Media;
 
 namespace NovaOdessa
 {
-    public class Hero : Basic2d
+    public class Hero : Unit
     {
-        public float speed;
-
         public Hero(string PATH, Vector2 POS, Vector2 DIMS) : base(PATH, POS, DIMS) {
             speed = 2.0f;
         }
