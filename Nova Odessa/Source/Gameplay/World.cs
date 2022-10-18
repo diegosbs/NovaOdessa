@@ -19,11 +19,11 @@ namespace NovaOdessa
 {
     public class World
     {
-        public Basic2d hero;
+        public Hero hero;
 
         public World()
         {
-            hero = new Basic2d("2d\\ball", new Vector2(300, 300), new Vector2(48, 48));
+            hero = new Hero("2d\\ball", new Vector2(300, 300), new Vector2(48, 48));
         }
 
         public virtual void Update()
@@ -31,9 +31,9 @@ namespace NovaOdessa
             hero.Update();
         }
 
-        public virtual void Draw()
+        public virtual void Draw(Vector2 OFFSET)
         {
-            hero.Draw();
+            hero.Draw(OFFSET);
         }
         
     }
