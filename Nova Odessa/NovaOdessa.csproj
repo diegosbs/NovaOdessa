@@ -12,6 +12,18 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Content\2d\ball.png" />
+    <None Remove="Content\2d\Misc\CursorArrow.xnb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\2d\ball.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\2d\Misc\CursorArrow.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.1.303" />
     <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
   </ItemGroup>
@@ -19,14 +31,6 @@
     <Folder Include="Content\Audio\" />
     <Folder Include="Content\Fonts\" />
   </ItemGroup>
-   <!-- <ItemGroup>
-    <Content Include="Content\2d\Misc\CursorArrow.xnb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\2d\ball.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup> -->
   <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
     <Message Text="Restoring dotnet tools" Importance="High" />
     <Exec Command="dotnet tool restore" />
